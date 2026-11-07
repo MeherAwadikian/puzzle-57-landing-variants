@@ -1,0 +1,128 @@
+/* Variant C — dark, editorial, left-aligned single narrow column. Serif
+   headline, a pulled testimonial quote, and one quiet ghost CTA. Accent:
+   amber on near-black. Deliberately the opposite of A's loud centered pitch. */
+.page {
+  --accent: #f59e0b;
+  min-height: 100vh;
+  background: #0b0b0e;
+  color: #e9e6df;
+}
+
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 24px 110px;
+}
+
+.essay {
+  border-left: 2px solid rgba(245, 158, 11, 0.5);
+  padding-left: 28px;
+}
+
+@media (max-width: 560px) {
+  .essay {
+    padding-left: 18px;
+  }
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 20px;
+}
+
+.headline {
+  font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
+  font-weight: 600;
+  font-size: clamp(34px, 5.4vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0 0 24px;
+  color: #fbf8f1;
+}
+
+.lede {
+  font-size: 19px;
+  line-height: 1.65;
+  color: #bdb8ad;
+  margin: 0 0 40px;
+}
+
+.quote {
+  margin: 0 0 44px;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #efeadf;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-style: normal;
+  color: var(--accent);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 0 0 48px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fact {
+  margin: 0;
+}
+
+.fact dt {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fbf8f1;
+}
+
+.fact dd {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #8f8a80;
+  max-width: 20ch;
+}
+
+.ctaWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.cta {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 13px 26px;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  transition:
+    background 0.16s ease,
+    color 0.16s ease;
+}
+
+.cta:hover {
+  background: var(--accent);
+  color: #0b0b0e;
+}
+
+.note {
+  font-size: 13.5px;
+  color: #8f8a80;
+}

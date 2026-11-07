@@ -1,0 +1,174 @@
+/* Variant B — split two-column hero. Benefit bullets on the left, a results
+   panel on the right, and a dual primary/secondary CTA. Accent: emerald. */
+.page {
+  --accent: #10b981;
+  --accent-ink: #065f46;
+  min-height: 100vh;
+  background: #f6fbf9;
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.pill {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: #d1fae5;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.headline {
+  font-size: clamp(32px, 4.6vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 18px 0 16px;
+  color: #06251c;
+}
+
+.sub {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #3f5950;
+  margin: 0 0 24px;
+  max-width: 48ch;
+}
+
+.benefits {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.benefits li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: #243b34;
+}
+
+.benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.ctaPrimary {
+  font-size: 16px;
+  font-weight: 650;
+  color: #fff;
+  background: var(--accent);
+  padding: 14px 24px;
+  border-radius: 10px;
+  transition: background 0.14s ease;
+}
+
+.ctaPrimary:hover {
+  background: #0f9f72;
+}
+
+.ctaSecondary {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-ink);
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 1px solid #a7f3d0;
+  background: #fff;
+}
+
+.ctaSecondary:hover {
+  border-color: var(--accent);
+}
+
+.note {
+  font-size: 13.5px;
+  color: #6b8b80;
+  margin: 16px 0 0;
+}
+
+.panel {
+  background: #06251c;
+  color: #d9f7ec;
+  border-radius: 20px;
+  padding: 30px 28px;
+  box-shadow: 0 24px 60px -28px rgba(6, 37, 28, 0.6);
+}
+
+.panelTitle {
+  margin: 0 0 20px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6ee7b7;
+}
+
+.stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 22px;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.statLabel {
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: #9fd9c4;
+}
