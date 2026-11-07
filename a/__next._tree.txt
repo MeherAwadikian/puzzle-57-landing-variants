@@ -1,0 +1,5 @@
+:HL["/puzzle-57-landing-variants/_next/static/chunks/21dh2se2dn0ez.css","style"]
+:HL["/puzzle-57-landing-variants/_next/static/chunks/1_2dk_qao8zm1.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"a","h":96,"c":"$Q2"}]]
+0:{"b":"KA6Ou3h-u_HpCQFEuIR_4","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
